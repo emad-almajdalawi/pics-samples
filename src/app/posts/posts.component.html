@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Posts</h2>
+
+  <div class="form">
+    <form #submittForm (submit)="submittPost($event)">
+      <div class="field">
+        <label>Title</label>
+        <input name="title" type="text">
+      </div>
+      <div class="field">
+        <label>Body</label>
+        <input name="body" type="text">
+      </div>
+      <button class="submitt-btn" type="submit">Submitt Post</button>
+    </form>
+  </div>
+
+  <ul *ngFor="let post of postsData.value">
+    <li>{{post.title}}</li>
+    <p>{{post.body}}</p>
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+<h2>Image Details</h2>
+
+<div class="container">
+  <div class="image">
+    <h3 class="img-title">{{dataService.photosData.value[id].title}}</h3>
+    <img src="{{dataService.photosData.value[id].url}}" alt="Photo">
+    <p>Album Id: {{dataService.photosData.value[id].albumId}}</p>
+    <p>id: {{dataService.photosData.value[id].id}}</p>
+    <p>Thumbnail: </p>
+    <img src="{{dataService.photosData.value[id].thumbnailUrl}}" alt="Thumbnail">
+  </div>
+</div>

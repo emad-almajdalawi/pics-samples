@@ -1,0 +1,36 @@
+.form {
+  padding: 15px;
+  background: rgb(231, 231, 231);
+  border-radius: 25px;
+  width: 80%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  font-size: 18px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.submitt-btn {
+  grid-column: span 2/3;
+  width: 25%;
+  padding: 15px;
+  justify-self: center;
+  background: #161b22;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
